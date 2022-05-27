@@ -4,53 +4,58 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family= Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Todo App</title>
 </head>
 <body>
-  <div class="page">
+  <main class="page">
     <div class="info-box">
       <img src="./eisenhower-matrix.jpg">
-      <a class='more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        <a class='more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
-    <div class="main-wrapper">
-      <p id="section-item">
+    <article class="article-wrapper">
+      <section id="section-item">
         <label for="add-item">Add Item</label>
         <div class="row-wrapper">
           <input id="new-input"class="input-text" type="text">
         <button>Add</button>
-      </div>
-      </p>
-      <h3>Todo</h3>
-      <ul id="complete-list">
-        <li> 
-          <input type="checkbox">
-          <label class="pay">Pay Bills</label>
-          <input type="text" class="input-text">
-          <button class="edit">Edit</button>
-          <button class="del"><img src="./remove.svg"></button>
-        </li>
-        <li class="edit-mode">
-          <input type="checkbox">
-          <label for="shopping">Go Shopping</label>
-          <input type="text" value="go shopping" class="input-text">
-          <button class="edit">Save</button>
-          <button class="del"><img src="./remove.svg"></button>
-        </li>
-      </ul>
-      <h3>Completed</h3>
-      <ul id="completed-list">
-        <li>
-          <input type="checkbox" checked>
-          <label class="doctor">See the Doctor</label>
-          <input type="text" class="input-text">
-          <button class="edit">Edit</button>
-          <button class="del"><img src="./remove.svg"></button>
-        </li>
-      </ul>
-    </div>
-  </div>
+        </div>
+      </section>
+      <section id="todo">
+        <h3>Todo</h3>
+        <ul id="complete-list">
+          <li> 
+            <input type="checkbox">
+            <label class="pay">Pay Bills</label>
+            <input type="text" class="input-text">
+            <button class="edit">Edit</button>
+            <button class="del"><img src="./remove.svg"></button>
+          </li>
+          <li class="edit-mode">
+            <input type="checkbox">
+            <label for="shopping">Go Shopping</label>
+            <input type="text" value="go shopping" class="input-text">
+            <button class="edit">Save</button>
+            <button class="del"><img src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+
+      <section id="completed">
+        <h3>Completed</h3>
+        <ul id="completed-list">
+          <li>
+            <input type="checkbox" checked>
+            <label class="doctor">See the Doctor</label>
+            <input type="text" class="input-text">
+            <button class="edit">Edit</button>
+            <button class="del"><img src="./remove.svg"></button>
+          </li>
+        </ul>
+      </section>
+    </article>
+  </main>
 <script src="app.js"></script>
 </body>
 </html>
