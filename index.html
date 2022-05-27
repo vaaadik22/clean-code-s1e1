@@ -9,45 +9,47 @@
   <title>Todo App</title>
 </head>
 <body>
-  <div class="info-box">
-    <img src="./eisenhower-matrix.jpg">
-    <a class='more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-  </div>
-  <div class="main-wrapper">
-    <p id="section-item">
-      <label for="add-item">Add Item</label>
-      <div class="row-wrapper">
-        <input id="new-input"class="input-text" type="text">
+  <div class="page">
+    <div class="info-box">
+      <img src="./eisenhower-matrix.jpg">
+      <a class='more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </div>
+    <div class="main-wrapper">
+      <p id="section-item">
+        <label for="add-item">Add Item</label>
+        <div class="row-wrapper">
+          <input id="new-input"class="input-text" type="text">
         <button>Add</button>
       </div>
-    </p>
-    <h3>Todo</h3>
-    <ul id="complete-list">
-      <li> 
-        <input type="checkbox">
-        <label class="pay">Pay Bills</label>
-        <input type="text" class="input-text">
-        <button class="edit">Edit</button>
-        <button class="del"><img src="./remove.svg"></button>
-      </li>
-      <li class="edit-mode">
-        <input type="checkbox">
-        <label for="shopping">Go Shopping</label>
-        <input type="text" value="go shopping" class="input-text">
-        <button class="edit">Save</button>
-        <button class="del"><img src="./remove.svg"></button>
-      </li>
-    </ul>
-    <h3>Completed</h3>
-    <ul id="completed-list">
-      <li>
-        <input type="checkbox" checked>
-        <label class="doctor">See the Doctor</label>
-        <input type="text" class="input-text">
-        <button class="edit">Edit</button>
-        <button class="del"><img src="./remove.svg"></button>
-      </li>
-    </ul>
+      </p>
+      <h3>Todo</h3>
+      <ul id="complete-list">
+        <li> 
+          <input type="checkbox">
+          <label class="pay">Pay Bills</label>
+          <input type="text" class="input-text">
+          <button class="edit">Edit</button>
+          <button class="del"><img src="./remove.svg"></button>
+        </li>
+        <li class="edit-mode">
+          <input type="checkbox">
+          <label for="shopping">Go Shopping</label>
+          <input type="text" value="go shopping" class="input-text">
+          <button class="edit">Save</button>
+          <button class="del"><img src="./remove.svg"></button>
+        </li>
+      </ul>
+      <h3>Completed</h3>
+      <ul id="completed-list">
+        <li>
+          <input type="checkbox" checked>
+          <label class="doctor">See the Doctor</label>
+          <input type="text" class="input-text">
+          <button class="edit">Edit</button>
+          <button class="del"><img src="./remove.svg"></button>
+        </li>
+      </ul>
+    </div>
   </div>
 <script src="app.js"></script>
 </body>

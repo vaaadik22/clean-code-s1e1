@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -10,10 +10,10 @@ body {
     display: block;
     text-align: right;
 }
-.info-box img {
+img {
     width: 100%;
 }
-.info-box .more-info {
+.more-info {
     font-family: fantasy, cursive;
 }
 
@@ -88,7 +88,7 @@ label[for='add-item'] {
     display: block;
     margin: 0 0 20px;
 }
-input#new-input {
+#new-input {
     width: 318px;
 }
 
@@ -118,31 +118,31 @@ li > label {
 li >    input[type="text"] {
     width: 226px
 }
-button.del img {
+.del img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.del img:hover {
+.del img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-list label {
+#completed-list label {
     text-decoration: line-through
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+li input[type=text] {
     display:none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode label {
     display:none;
 }
