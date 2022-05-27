@@ -9,41 +9,41 @@
   <title>Todo App</title>
 </head>
 <body>
-  <div class="aaa">
+  <div class="info-box">
     <img src="./eisenhower-matrix.jpg">
-    <a class='more-inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    <a class='more-info' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
-  <div class="centered-main-page-element">
-    <p id="top-section-for-add-ingel-ement-to-list">
-      <label for="new-task">Add Item</label>
-      <div class="task-row-wrapper">
-        <input id="new-task"class="task" type="text">
+  <div class="main-wrapper">
+    <p id="section-item">
+      <label for="add-item">Add Item</label>
+      <div class="row-wrapper">
+        <input id="new-input"class="input-text" type="text">
         <button>Add</button>
       </div>
     </p>
     <h3>Todo</h3>
-    <ul id="in-complete-tasks">
+    <ul id="complete-list">
       <li> 
         <input type="checkbox">
-        <label class="task">Pay Bills</label>
-        <input type="text" class="task">
+        <label class="pay">Pay Bills</label>
+        <input type="text" class="input-text">
         <button class="edit">Edit</button>
         <button class="delete"><img src="./remove.svg"></button>
       </li>
       <li class="edit-mode">
         <input type="checkbox">
-        <label class="task">Go Shopping</label>
-        <input type="text" value="go shopping" class="task">
+        <label for="shopping">Go Shopping</label>
+        <input type="text" value="go shopping" class="input-text">
         <button class="edit">Save</button>
         <button class="delete"><img src="./remove.svg"></button>
       </li>
     </ul>
     <h3>Completed</h3>
-    <ul id="completed-tasks">
+    <ul id="completed-list">
       <li>
         <input type="checkbox" checked>
-        <label class="task">See the Doctor</label>
-        <input type="text" class="task">
+        <label class="doctor">See the Doctor</label>
+        <input type="text" class="input-text">
         <button class="edit">Edit</button>
         <button class="delete"><img src="./remove.svg"></button>
       </li>
